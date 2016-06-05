@@ -26,4 +26,8 @@ public class DebugActivity extends Activity
                 "Balance is: "+ Double.toString(account.getBalance()), Toast.LENGTH_SHORT);
         toast.show();
     }
+
+    public void onShowCategoryView(View view) {
+        setContentView(R.layout.category);
+    }
 }

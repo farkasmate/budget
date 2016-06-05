@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical"
+    android:background="@android:color/holo_red_dark">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_dark">
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BALANCE"
+            android:id="@+id/balanceCategory"/>
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="5200.01"
+            android:id="@+id/value" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="4"
+            android:layout_gravity="bottom">
+
+            <y2k.budget.view.TileLayout
+                style="@style/TileStyle"
+                android:src="@drawable/income"/>
+            <y2k.budget.view.TileLayout
+                style="@style/TileStyle"
+                android:src="@drawable/food"/>
+            <y2k.budget.view.TileLayout
+                style="@style/TileStyle"
+                android:src="@drawable/drink"/>
+
+            <y2k.budget.view.TileLayout
+                style="@style/TileStyle"
+                android:src="@drawable/house"/>
+            <y2k.budget.view.TileLayout
+                style="@style/TileStyle"
+                android:src="@drawable/clothing"/>
+            <y2k.budget.view.TileLayout
+                style="@style/TileStyle"
+                android:src="@drawable/transport"/>
+
+            <y2k.budget.view.TileLayout
+                style="@style/TileStyle"
+                android:src="@drawable/healthcare"/>
+            <y2k.budget.view.TileLayout
+                style="@style/TileStyle"
+                android:src="@drawable/education"/>
+            <y2k.budget.view.TileLayout
+                style="@style/TileStyle"
+                android:src="@drawable/groceries"/>
+
+            <y2k.budget.view.TileLayout
+                style="@style/TileStyle"
+                android:src="@drawable/leisure"/>
+            <y2k.budget.view.TileLayout
+                style="@style/TileStyle"
+                android:src="@drawable/savings"/>
+            <y2k.budget.view.TileLayout
+                style="@style/TileStyle"
+                android:src="@drawable/special"/>
+        </GridLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

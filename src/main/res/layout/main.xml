@@ -11,5 +11,11 @@
         android:text="getBalance"
         android:id="@+id/balanceButton"
         android:onClick="onGetBalance" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="showCategoryView"
+        android:id="@+id/categoryButton"
+        android:onClick="onShowCategoryView" />
 </LinearLayout>
 
